@@ -26,3 +26,10 @@ final class TableViewSectionModel {
         self.header = header
     }
 }
+
+struct DataModel {
+    let text:String
+    var comandText: String {
+        return text + "CommandLine"
+    }
+}
