@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let element = UITableView(frame: self.view.bounds, style: .plain)
         element.register(UITableViewCell.self, forCellReuseIdentifier: "customID")
+        element.backgroundColor = .systemBackground
         return element
     }()
     
@@ -25,7 +26,6 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
         setupViews()
         setupConstrains()
         configureTableView()
